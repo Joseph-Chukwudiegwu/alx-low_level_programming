@@ -12,7 +12,7 @@ int main(void)
 		putchar((num % 10) + '0');
 
 	for (alpha = 'a'; alpha < 'g'; alpha++)
-		putcha(alpha);
+		putchar(alpha);
 
 	putchar('\n');
 

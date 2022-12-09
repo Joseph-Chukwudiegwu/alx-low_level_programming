@@ -7,7 +7,7 @@ int main(void)
 {
 	int num;
 
-	for (num = 18; num < 28; num++)
+	for (num = 0; num < 10; num++)
 	{
 		putchar(num);
 		if (num != 27)
