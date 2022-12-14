@@ -22,7 +22,7 @@ int main(void)
 		fib2 = fibsum;
 	}
 
-	printf("%.0f\n", total_sum)
+	printf("%.0f\n", total_sum);
 
 	return (0);
 }
