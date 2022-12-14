@@ -15,7 +15,7 @@ int main(void)
 	for (num = 0; num < 92; num++)
 	{
 		sum = fib1 + fib2;
-		printf("%1u, ", sum);
+		printf("%lu, ", sum);
 		fib1 = fib2;
 		fib2 = sum;
 	}
@@ -34,7 +34,7 @@ int main(void)
 			half1 += 1;
 			half2 %= 10000000000;
 		}
-		printf("%1u%1u", half1, half2);
+		printf("%lu%lu", half1, half2);
 
 		if (num != 98)
 			printf(", ");
