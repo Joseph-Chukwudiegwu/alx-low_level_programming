@@ -20,9 +20,9 @@ unsigned int _strspn(char *s, char *accept)
 				if (s[x] == accept[y])
 					z++;
 			}
-			else
-				return (z);
 		}
+		else
+			return (z);
 	}
-		return (z);
+	return (z);
 }
