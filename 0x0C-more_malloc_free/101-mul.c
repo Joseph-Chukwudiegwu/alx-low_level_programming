@@ -17,7 +17,7 @@ void _print(char *str, int l)
 		if (str[i] != '0')
 			j = 1;
 		if (j || i == l - 1)
-			_putchar(str[1]);
+			_putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');
