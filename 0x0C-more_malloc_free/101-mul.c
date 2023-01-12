@@ -22,6 +22,7 @@ void _print(char *str, int l)
 	}
 	_putchar('\n');
 	free(str);
+}
 
 /**
  * mul - miltiplies a char with a string and places the ans into dest
