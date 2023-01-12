@@ -104,7 +104,7 @@ void init(char *str, int l)
  * Return: 0, or exit status of 98 if failure
  */
 
-int main(int argc, char *argv[j])
+int main(int argc, char *argv[])
 {
 	int l1, l2, ln, ti, i;
 	char *a;
