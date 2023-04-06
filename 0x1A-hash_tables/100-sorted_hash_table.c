@@ -108,35 +108,35 @@ void add_to_sorted_list(shash_table_t *table, shash_node_t *node)
 
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-		unsigned long int index;
-			char *new_value;
-				shash_node_t *shn, *tmp;
+	unsigned long int index;
+	char *new_value;
+	shash_node_t *shn, *tmp;
 
-					if (ht == NULL || ht->array == NULL || ht->size == 0 ||
-								    key == NULL || strlen(key) == 0 || value == NULL)
-								return (0);
-						index = key_index((const unsigned char *)key, ht->size);
-							tmp = ht->array[index];
-								while (tmp != NULL)
-										{
-													if (strcmp(tmp->key, key) == 0)
-																{
-																				new_value = strdup(value);
-																							if (new_value == NULL)
-																												return (0);
-																										free(tmp->value);
-																													tmp->value = new_value;
-																																return (1);
-																																		}
-															tmp = tmp->next;
-																}
-									shn = make_shash_node(key, value);
-										if (shn == NULL)
-													return (0);
-											shn->next = ht->array[index];
-												ht->array[index] = shn;
-													add_to_sorted_list(ht, shn);
-														return (1);
+	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
+	key == NULL || strlen(key) == 0 || value == NULL)
+		return (0);
+	index = key_index((const unsigned char *)key, ht->size);
+	tmp = ht->array[index];
+	while (tmp != NULL)
+	{
+		if (strcmp(tmp->key, key) == 0)
+		{
+			new_value = strdup(value);
+			if (new_value == NULL)
+				return (0);
+			free(tmp->value);
+			tmp->value = new_value;
+			return (1);
+		}
+		tmp = tmp->next;
+	}
+	shn = make_shash_node(key, value);
+	if (shn == NULL)
+		return (0);
+	shn->next = ht->array[index];
+	ht->array[index] = shn;
+	add_to_sorted_list(ht, shn);
+	return (1);
 }
 
 /**
