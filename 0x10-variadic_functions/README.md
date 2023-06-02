@@ -1,4 +1,4 @@
-Variaidc function project README file
+# `Variaidc function`
 
 Task 0: A function that returns the sum of all its parameters.
 
