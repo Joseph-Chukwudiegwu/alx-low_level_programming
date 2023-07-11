@@ -1,5 +1,7 @@
 
 # `ALX Low Level Programming`
+![image](https://github.com/Joseph-Chukwudiegwu/alx-low_level_programming/assets/117829502/c9c45b75-224b-4f8c-acc2-ec1a65ec4d6b)
+
 
 - This repository is a collection of projects written in the C programming language. C is a versatile and widely used programming language that is popular for system-level programming, operating systems, embedded systems, and game development, among other things.
 - The projects in this repository cover a variety of topics, ranging from simple programs that demonstrate basic concepts such as input/output and control flow to more complex projects that involve data structures, algorithms, and advanced concepts such as pointers and memory management.
